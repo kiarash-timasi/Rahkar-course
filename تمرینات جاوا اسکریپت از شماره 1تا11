@@ -1,0 +1,108 @@
+//الگوی اعداد
+let n = 8;
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    string += j;
+  }
+  string += "\n";
+}
+console.log(string);
+
+//-------------------------------------------
+
+//برنامه حذف اجزا آرایه
+    var array = [1,13,22,123,49]
+     
+    console.log("Original array: " + array)
+     
+    while (array.length) {
+     
+        array.pop();
+    }
+    console.log("Array Length: " + array.length )
+    
+//-------------------------------------------------------
+
+// بزرگتریت عدد آرایه
+var arr = [1,13,22,123,49];
+var largest = arr[0];
+
+for (var i = 0; i < arr.length; i++) {
+    if (largest < arr[i] ) {
+        largest = arr[i];
+    }
+}
+console.log(largest);
+
+/------------------------------------------
+
+// تمرین چاپ اعداد زوج بین 1 تا 10000
+let i 
+for(i=1;i<=10000; i++){
+  if(i%2==0){
+    console.log(i)
+  }
+}
+
+/----------------------------------------------
+
+//تمرین چاپ اعداد فرد بین 1 تا 10000
+let i 
+for(i=1;i<=10000; i++){
+  if(i%2==1){
+    console.log(i)
+  }
+}
+
+//--------------------------------------------
+
+//جدول ضرب
+var result = 'x ';
+for (var i = 0; i < 11; i++) {
+
+    for (var j = 0; j < 11; j++) {
+
+        if(i == 0 && j > 0){
+          result += '[' + j + ']';
+        } 
+        else if(j == 0 && i>0){
+          result += '[' + i + '] ';
+        } 
+        else if(i>0 && j>0){
+        result += (i*j) + ' ';
+        }
+    }
+    result += '\n'
+}
+
+console.log(result);
+
+//------------------------------------------------
+
+// چاپ مجموع اعداد آرایه
+	var arr = [1,13,22,123,49];
+	
+	var sum = 0;
+	
+	for (let i = 0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+	
+	console.log("Sum is " + sum)
+  
+  /--------------------------------------------------
+  
+  //کوچکترین عدد آرایه
+var arr= [1,13,22,123,49];
+var smallest = arr[0];
+
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+        smallest = arr[i];
+    }
+}
+
+console.log(smallest);
+
+//----------------------------------------------
